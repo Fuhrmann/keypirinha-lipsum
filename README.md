@@ -25,7 +25,7 @@ move it to the `InstalledPackage` folder located at:
 
 ## Usage
 
-To use it simply search for "Lorem Ipsum" and select using TAB. The are four suggestions at this moment:
+To use it simply type "lipsum" and select using TAB. The are four suggestions at this moment:
 - Paragraphs
 - Words
 - Bytes
