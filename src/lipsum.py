@@ -68,17 +68,16 @@ class Lipsum(kp.Plugin):
             opener = kpnet.build_urllib_opener()
 
             headers = []
-            headers.append(
-                ('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'))
+            headers.append(('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'))
             opener.addheaders = headers[:]
 
-            request = opener.open(
-                self.LOREM_IPSUM_API + "?amount=" + ammount + "&start=" + start + "&what=" + type)
-            response = request.read().decode(encoding="utf-8", errors="strict")
+            with opener.open(self.LOREM_IPSUM_API + "?amount=" + ammount + "&start=" + start + "&what=" + type) as request:
+                response = request.read().decode(encoding="utf-8", errors="strict")
+
             data = json.loads(response)
             return data['feed']['lipsum']
         except:
-            return "loripsum.net website could not be reached!"
+            return "lipsum.com website could not be reached!"
 
     # Search for a number in a string
     def _search_number(self, text):
@@ -112,7 +111,7 @@ class Lipsum(kp.Plugin):
             self.create_action(name="yes", label="Yes",
                                short_desc="Start with 'Lorem Ipsum...'"),
             self.create_action(name="no", label="No",
-                               short_desc="Start with 'Lorem Ipsum...'")
+                               short_desc="Dont start with 'Lorem Ipsum...'")
         ])
 
 
