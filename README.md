@@ -11,8 +11,14 @@ This plugin provides a way to generate Lorem Ipsum text using the API provided b
 
 https://github.com/Fuhrmann/keypirinha-lipsum/releases
 
-
 ## Install
+
+#### Managed
+
+[@ueffel](https://github.com/ueffel) wrote [PackageControl](https://github.com/ueffel/Keypirinha-PackageControl), a package manager that eases the install of third-party packages.
+It must be installed manually.
+
+#### Manual
 
 Once the `lipsum.keypirinha-package` file is installed,
 move it to the `InstalledPackage` folder located at:
@@ -34,6 +40,9 @@ To use it simply type "lipsum" and select using TAB. The are four suggestions at
 You can enter the ammount of paragraphs, words, bytes or lists you wish to generate.
 
 ## Change Log
+
+### v1.0.1
+* Bug fixes
 
 ### v1.0
 * Released
