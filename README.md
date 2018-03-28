@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/lipsum.ico" />
+</p>
+
 # Keypirinha Plugin: lipsum
 
 This is **lipsum**, a plugin for the
