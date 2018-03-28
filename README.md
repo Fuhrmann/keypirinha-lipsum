@@ -13,7 +13,7 @@ This plugin provides a way to generate Lorem Ipsum text using the API provided b
 
 ## Download
 
-https://github.com/Fuhrmann/keypirinha-lipsum/releases
+https://github.com/Fuhrmann/keypirinha-lipsum/releases/latest
 
 ## Install
 
@@ -44,6 +44,9 @@ To use it simply type "lipsum" and select using TAB. The are four suggestions at
 You can enter the ammount of paragraphs, words, bytes or lists you wish to generate.
 
 ## Change Log
+
+### v1.0.2
+* Added plugin's icon
 
 ### v1.0.1
 * Bug fixes
